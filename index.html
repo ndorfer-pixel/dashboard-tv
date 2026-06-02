@@ -1,34 +1,65 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Dashboard TV - ICB</title>
+
   <style>
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
+
       background: #000;
+
       width: 100vw;
+
       height: 100vh;
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
       overflow: hidden;
+
     }
+
     img {
+
       width: 100%;
+
       height: 100%;
+
       object-fit: contain;
+
     }
+
   </style>
+
 </head>
+
 <body>
+
   <img id="slide" src="" alt="Dashboard ICB" />
 
   <script>
+
     // Agrega timestamp para evitar caché del navegador
+
     const ts = new Date().getTime();
+
     document.getElementById("slide").src = "slide.png?v=" + ts;
+
   </script>
+
 </body>
+
 </html>
