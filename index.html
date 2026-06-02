@@ -23,6 +23,12 @@
   </style>
 </head>
 <body>
-  <img src="slide.png" alt="Dashboard ICB" />
+  <img id="slide" src="" alt="Dashboard ICB" />
+
+  <script>
+    // Agrega timestamp para evitar caché del navegador
+    const ts = new Date().getTime();
+    document.getElementById("slide").src = "slide.png?v=" + ts;
+  </script>
 </body>
 </html>
